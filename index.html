@@ -1,10 +1,75 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
+<!doctype html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title></title>
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="libs/jquery/dist/jquery.js" type="text/javascript"></script>
+    <script src="libs/jquery.easing/js/jquery.easing.js" type="text/javascript"></script>
+    <script src="libs/underscore/underscore.js" type="text/javascript"></script>
+
+    <script src="app/sound.js" type="text/javascript"></script>
+    <script src="app/plane.js" type="text/javascript"></script>
+    <script src="app/skeeter.js" type="text/javascript"></script>
+    <script src="app/fly.js" type="text/javascript"></script>
+    <script src="app/hornet.js" type="text/javascript"></script>
+    <script src="app/drone.js" type="text/javascript"></script>
+    <script src="app/bullet.js" type="text/javascript"></script>
+    <script src="app/scoreboard.js" type="text/javascript"></script>
+    <script src="app/pie.js" type="text/javascript"></script>
+    <script src="app/sky.js" type="text/javascript"></script>
+    <script src="app/main.js" type="text/javascript"></script>
+
+    <title>Plane War</title>
 </head>
 <body>
-
+<div id="info">
+    <p>FPS : <span id="fps">0</span></p>
+    <p>Dragging the plane to move.<br>Click spacing to pause/play</p>
+</div>
+<div id="copyright">
+    Copyright © 2013 <a href="http://oglen.net" target="_blank">oglen.net</a>
+</div>
+<div id="top10_wrap">
+    <div>
+        <h2>Top 10</h2>
+        <table id="tab_top10" border="0" cellspacing="0"></table>
+        <p id="score_button_wrap">
+            <button id="back" name="back">Back</button>
+        </p>
+    </div>
+</div>
+<div id="score_wrap">
+    <div>
+        <h2>Score statistics</h2>
+        <p>Player : <span id="player">-</span>.</p>
+        <p>Total score : <span id="total_score">-</span>.</p>
+        <p>Ranking : <span id="ranking">-</span>.</p>
+        <p>Killed :
+            <b id="skeeters">-</b> Skeeters.
+            <b id="flies">-</b> Flies.
+            <b id="hornets">-</b> Hornets.
+        </p>
+        <p id="score_button_wrap">
+            <button id="top10" name="top10">Top 10</button> &nbsp; &nbsp;
+            <button id="restart" name="restart">Restart</button>
+            <span class="clr"></span>
+        </p>
+    </div>
+</div>
+<div id="player_wrap">
+    <ul>
+        <h2>Welcome</h2>
+        <li>Enter your name or email<span id="player_notice"></span>.</li>
+        <li>
+            <input id="player_input" name="player_input" type="text">
+            <button id="submit" name="submit">Submit</button>
+            <span class="clr"></span>
+        </li>
+        <li></li>
+    </ul>
+</div>
+<div id="loading">loading...</div>
+<canvas id="sky"></canvas>
 </body>
 </html>

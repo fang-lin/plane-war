@@ -5,7 +5,7 @@
     "authors": "Justin <oglen.net@gmail.com>",
     "window": {
         "toolbar": false,
-        "frame": false
+        "frame": true
     },
     "dependencies": {
 
