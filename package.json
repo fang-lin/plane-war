@@ -1,0 +1,13 @@
+{
+    "name": "plane-war",
+    "main": "index.html",
+    "version": "0.0.1",
+    "authors": "Justin <oglen.net@gmail.com>",
+    "window": {
+        "toolbar": false,
+        "frame": false
+    },
+    "dependencies": {
+
+    }
+}
